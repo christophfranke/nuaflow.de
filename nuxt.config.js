@@ -65,9 +65,7 @@ module.exports = {
       // Call first Page of the Links API: https://www.storyblok.com/docs/Delivery-Api/Links
       axios.get(`https://api.storyblok.com/v1/cdn/links?token=${token}&version=${version}&per_page=${per_page}&page=${page}`).then((res) => {
         Object.keys(res.data.links).forEach((key) => {
-          if (res.data.links[key].slug != 'home') {
-            routes.push('/' + res.data.links[key].slug)
-          }
+          routes.push('/' + res.data.links[key].slug)
         })
 
         // Check if there are more pages available otherwise execute resolve with current routes.
@@ -87,9 +85,7 @@ module.exports = {
         axios.all(contentRequests).then(axios.spread((...requests) => {
           requests.forEach((request) => {
             Object.keys(request.data.links).forEach((key) => {
-              if (request.data.links[key].slug != 'home') {
-                routes.push('/' + request.data.links[key].slug)
-              }
+              routes.push('/' + request.data.links[key].slug)
             })
           })
         
