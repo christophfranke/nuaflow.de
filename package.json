@@ -1,0 +1,20 @@
+{
+  "name": "vue-nuxt-storyblok-boilerplate",
+  "version": "1.0.0",
+  "description": "Nuxt.js Storyblok Boilerplate",
+  "author": "Alexander Feiglstorfer <delooks@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "preview": "nuxt build --spa",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "storyblok-nuxt": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
