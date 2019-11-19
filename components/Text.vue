@@ -1,6 +1,5 @@
 <template>
-  <div v-editable="blok" class="column feature">
-    {{ blok.name }}
+  <div v-editable="blok" class="column">
     <div v-html="content"></div>
   </div>
 </template>
@@ -15,3 +14,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+</style>

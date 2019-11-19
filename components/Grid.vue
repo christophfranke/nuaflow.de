@@ -9,3 +9,17 @@ export default {
   props: ['blok']
 }
 </script>
+
+<style lang="scss">
+@import '../styles/main';
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+</style>

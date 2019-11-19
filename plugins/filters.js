@@ -20,8 +20,3 @@ Vue.filter('dashify', function (value) {
 
   return `blok-${dashified}`
 })
-
-// Vue.filter('richtext', function (text) {
-//   console.log(Vue)
-//   return text
-// })
