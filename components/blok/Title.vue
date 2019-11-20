@@ -22,5 +22,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  .inner {  
+    padding: 40px 160px;
+    background-color: rgba(255, 255, 255, 0.25);
+    background: radial-gradient(circle at center,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 90%);
+    text-align: center;
+  }
 }
 </style>

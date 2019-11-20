@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Josefin Slab', serif;
 }
 
 img {
@@ -11,10 +12,24 @@ img {
   max-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
   margin-top: 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 1px dotted black;
+  border-top: 0;
+  width: 30%;
 }
 
 p {
   min-height: 15px;
+  margin-top: 0;
 }

@@ -17,6 +17,10 @@ export default {
 
 <style lang="scss">
 .text {
-  padding: 20px;
+  padding: 30px;
+  background: radial-gradient(circle at center,
+    rgba(255, 255, 255, 0.5) 0,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 90%);
 }
 </style>
