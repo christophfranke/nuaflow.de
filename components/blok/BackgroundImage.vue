@@ -34,6 +34,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/mixins';
+
 .outer {
   position: relative;
   background-size: cover;
@@ -58,6 +60,10 @@ export default {
     transform: translate(-50%);
     width: 2vw;
     cursor: pointer;
+
+    @include mobile {
+      width: 30px;
+    }
   }
 }
 </style>

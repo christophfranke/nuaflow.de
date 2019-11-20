@@ -16,6 +16,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/mixins';
+
 .outer {
   width: 100%;
   height: 100%;
@@ -29,6 +31,11 @@ export default {
       rgba(255, 255, 255, 0.5) 50%,
       rgba(255, 255, 255, 0) 90%);
     text-align: center;
+    overflow-x: auto;
+
+    @include mobile {
+      padding: 20px 40px;
+    }
   }
 }
 </style>
