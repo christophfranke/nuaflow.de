@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok" class="column">
-    <div v-html="content"></div>
+    <div v-html="content" class="text"></div>
   </div>
 </template>
 
@@ -16,5 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.text {
+  padding: 20px;
+}
 </style>
