@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 img {
   width: 100%;
   height: auto;
