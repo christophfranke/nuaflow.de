@@ -1,6 +1,6 @@
 <template>
-  <div v-editable="blok" class="outer">
-    <img :src="blok.image" ref="image">
+  <div v-editable="blok" :style="image" class="outer">
+    <img :src="blok.image" ref="image" class="image">
     <div class="inner">
       <component :key="blok._uid" v-for="blok in blok.content" :blok="blok" :is="blok.component | dashify" />
     </div>
@@ -34,14 +34,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
+.image {
   display: block;
   width: 100%;
   height: auto;
   max-height: 100vh;
+  visibility: hidden;
 }
 .outer {
   position: relative;
+  background-size: cover;
+  background-position: center center;
   .inner {
     position: absolute;
     top: 0;
