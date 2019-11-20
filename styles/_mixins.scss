@@ -8,13 +8,7 @@
 }
 
 @mixin mobile {
-  @include responsive(650px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @include responsive(900px) {
+  @include responsive(750px) {
     @content;
   }
 }

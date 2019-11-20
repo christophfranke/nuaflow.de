@@ -4,7 +4,7 @@
     <div class="inner">
       <component :key="blok._uid" v-for="blok in blok.content" :blok="blok" :is="blok.component | dashify" />
     </div>
-    <img src="~/assets/arrow-down-sign-to-navigate.svg" class="arrow" @click="scrollToNextPage" v-if="blok.arrow">
+    <img src="~/assets/arrow-down-sign-to-navigate.svg" class="arrow" @click="scrollToNextPage">
   </div>
 </template>
 
