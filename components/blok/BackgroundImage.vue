@@ -50,7 +50,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    background: radial-gradient(circle at center, transparent, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.7));
+    background: radial-gradient(circle at center, transparent, rgba(255, 255, 255, 0.1) 50%, rgba(30, 10, 0, 0.7));
     pointer-events: none;
   }
   .arrow {
